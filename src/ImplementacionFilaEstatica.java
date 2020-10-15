@@ -63,8 +63,8 @@ public class ImplementacionFilaEstatica implements RegistroImpresiones{
 		}
 	}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return "ImplementacionFilaEstatica [imp=" + Arrays.toString(imp) + ", ultimo=" + ultimo + "]";
-	}
+	}*/
 }

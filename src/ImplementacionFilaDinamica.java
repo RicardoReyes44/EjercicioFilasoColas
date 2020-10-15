@@ -54,8 +54,8 @@ public class ImplementacionFilaDinamica implements RegistroImpresiones{
 	@Override
 	public void recorrer() {}
 
-	@Override
+	/*@Override
 	public String toString() {
 		return "ImplementacionFilaDinamica [impresiones=" + impresiones + ", longitud=" + longitud + "]";
-	}
+	}*/
 }

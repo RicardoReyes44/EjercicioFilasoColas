@@ -147,12 +147,12 @@ public class PruebaFilasoColas {
 		    	entrada.nextLine();
 		    	System.out.println("Error en la entrada de datos <" + error + ">\n\n");
 		    }
-			System.out.println(ifd);
-			System.out.println(ife);
+			/*System.out.println(ifd);
+			System.out.println(ife);*/
 			System.out.println();
 		}
 		
-		System.out.println("Programa terminado");
+		System.out.println("Programa terminado :)");
 		
 	}
 
