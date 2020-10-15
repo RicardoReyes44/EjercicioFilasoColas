@@ -3,16 +3,16 @@ import java.util.Queue;
 
 public class ImplementacionFilaDinamica implements RegistroImpresiones{
 
-	Queue<Integer> imp;
+	private Queue<Integer> imp;
+	private int ultimo = -1;
 	
 	public ImplementacionFilaDinamica() {
 	    imp = new LinkedList<Integer>();
 	}
 
 	@Override
-	public boolean agregarElemento() {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean agregarElemento(Impresion imp) {
+		return true;
 	}
 
 	@Override
@@ -29,8 +29,7 @@ public class ImplementacionFilaDinamica implements RegistroImpresiones{
 
 	@Override
 	public boolean verificarPilaVacia() {
-		// TODO Auto-generated method stub
-		return false;
+		return imp.size()==ultimo;
 	}
 
 	@Override

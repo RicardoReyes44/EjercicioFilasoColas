@@ -13,9 +13,10 @@
 
 public interface RegistroImpresiones {
 
-	public boolean agregarElemento();
+	public boolean agregarElemento(Impresion imp);
 	public Impresion eliminarElemento();
 	public boolean verificarPilaLlena();
 	public boolean verificarPilaVacia();
 	public Impresion mostrarFrente();
+	public void recorrer();
 }

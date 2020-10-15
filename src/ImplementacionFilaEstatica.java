@@ -1,8 +1,8 @@
 
 public class ImplementacionFilaEstatica implements RegistroImpresiones{
 
-	Impresion imp[];
-	int ultimo = 0;
+	private Impresion imp[];
+	private int ultimo = -1;
 
 	public ImplementacionFilaEstatica(int tamaño) {
 		imp = new Impresion[tamaño];
