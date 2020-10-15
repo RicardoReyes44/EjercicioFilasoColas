@@ -3,38 +3,59 @@ import java.util.Queue;
 
 public class ImplementacionFilaDinamica implements RegistroImpresiones{
 
-	private Queue<Integer> imp;
-	private int ultimo = -1;
+	private Queue<Impresion> impresiones;
+	private int longitud = 0;
 	
 	public ImplementacionFilaDinamica() {
-	    imp = new LinkedList<Integer>();
+	    impresiones = new LinkedList<Impresion>();
 	}
 
 	@Override
 	public boolean agregarElemento(Impresion imp) {
-		return true;
+		    longitud++;
+			impresiones.add(imp);
+			return true;
 	}
 
 	@Override
 	public Impresion eliminarElemento() {
-		// TODO Auto-generated method stub
-		return null;
+		if(!verificarPilaVacia()) {
+			longitud--;
+			return impresiones.poll();
+		}else {
+			return null;
+		}
 	}
-
+	
 	@Override
-	public boolean verificarPilaLlena() {
-		// TODO Auto-generated method stub
-		return false;
+	public int mostrarTamaño() {
+		return impresiones.size();
 	}
 
 	@Override
 	public boolean verificarPilaVacia() {
-		return imp.size()==ultimo;
+		return impresiones.size()==0;
 	}
 
 	@Override
 	public Impresion mostrarFrente() {
-		// TODO Auto-generated method stub
-		return null;
+		if(!verificarPilaVacia()) {
+			return impresiones.element();
+		}else {
+			return null;
+		}
+	}
+
+	@Override
+	public boolean verificarPilaLlena() {
+		return true;
+	}
+
+	@Override
+	public void recorrer() {}
+
+	@Override
+	public String toString() {
+		return "ImplementacionFilaDinamica [impresiones=" + impresiones + ", longitud=" + longitud + "]";
 	}
 }

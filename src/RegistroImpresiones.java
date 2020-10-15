@@ -18,5 +18,6 @@ public interface RegistroImpresiones {
 	public boolean verificarPilaLlena();
 	public boolean verificarPilaVacia();
 	public Impresion mostrarFrente();
+	public int mostrarTamaño();
 	public void recorrer();
 }
